@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>More - Ryan Shin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ryan Shin - personal website. TODO: write a one-sentence description of yourself." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="more-page">
+  <header class="top-nav">
+    <div class="top-nav-inner">
+      <a class="site-title" href="index.html">Ryan Shin</a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="desktop-only">Projects</a>
+        <a href="more.html" class="desktop-only">More</a>
+
+        <button class="hamburger-btn" aria-label="Menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="mobile-dropdown" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="more.html">More</a>
+    </div>
+  </header>
+
+  <!-- Banner image: replace assets/img/background.svg (or point to a .jpg) -->
+  <div class="background">
+    <div class="background-inner">
+      <img src="assets/img/background.svg" alt="Background image" class="background-img" />
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+    <aside class="sidebar">
+      <div class="profile-card">
+        <!-- Profile photo: replace assets/img/profile.svg (or point to a .jpg) -->
+        <img src="assets/img/profile.svg" alt="Profile photo of Ryan Shin" class="profile-photo" />
+        <div class="profile-name">Ryan Shin</div>
+
+        <div class="profile-role">
+          Your Title / Role<br />
+          Your School or Company
+        </div>
+
+        <button class="related-links-btn" id="relatedLinksBtn">Related Links</button>
+
+        <ul class="profile-info" id="profileInfoList">
+          <li>
+            <img src="assets/img/map_pin_icon.svg" alt="Location" class="inline-icon" />
+            <span>City, State, Country</span>
+          </li>
+
+          <li>
+            <a href="assets/files/cv.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+              <img src="assets/img/cv_icon.svg" alt="CV" class="inline-icon" />
+              Download CV
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/ryan-shin14" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+              <img src="assets/img/github_icon.svg" alt="GitHub" class="inline-icon" />
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+              <img src="assets/img/linkedin_icon.svg" alt="LinkedIn" class="inline-icon" />
+              LinkedIn
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:you@example.com" class="sidebar-link">
+              <img src="assets/img/mail_icon.svg" alt="Email" class="inline-icon" />
+              Email
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="section" id="hobby-one">
+        <h2 class="section-title">Hobby One</h2>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="assets/img/photo1.svg" alt="Photo 1" />
+            <figcaption class="photo-caption">Caption for photo 1, 2025.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="assets/img/photo2.svg" alt="Photo 2" />
+            <figcaption class="photo-caption">Caption for photo 2, 2024.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- To embed a YouTube video instead of a photo, use:
+      <figure class="photo-card">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0" title="Video title"
+                style="width:100%;aspect-ratio:16/9;border:0;border-radius:8px" allowfullscreen></iframe>
+        <figcaption class="photo-caption">Caption</figcaption>
+      </figure>
+      -->
+
+      <section class="section" id="hobby-two">
+        <h2 class="section-title">Hobby Two</h2>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="assets/img/photo1.svg" alt="Photo 3" />
+            <figcaption class="photo-caption">Caption for photo 3.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
