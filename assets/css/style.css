@@ -273,8 +273,7 @@ a:hover{text-decoration:underline;}
 
 /* Subpage titles */
 .about-page .section-title,
-.projects-page .section-title,
-.more-page .section-title{ font-weight:650; }
+.projects-page .section-title{ font-weight:650; }
 
 /* =========================
    Featured / project list (Home + Projects)
@@ -458,36 +457,6 @@ figure.video-card{ margin:0; min-width:0; }
 }
 
 /* =========================
-   Photo grid (More page)
-   ========================= */
-.photo-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:22px;
-  width:75%;
-  align-items:start;
-}
-
-figure.photo-card{ margin:0; min-width:0; }
-
-.photo-card img{
-  width:100%;
-  display:block;
-  border-radius:8px;
-  aspect-ratio:16 / 9;
-  object-fit:cover;
-  background:#eee;
-}
-
-.photo-caption{
-  margin-top:10px;
-  font-size:.9rem;
-  line-height:1.7;
-  font-weight:650;
-  color:#111;
-}
-
-/* =========================
    Popup / Modal
    ========================= */
 .ui-backdrop{
@@ -657,12 +626,6 @@ figure.photo-card{ margin:0; min-width:0; }
     width:100%;
   }
   .video-caption{ font-size:1rem; }
-
-  .photo-grid{
-    grid-template-columns:1fr;
-    width:100%;
-  }
-  .photo-caption{ font-size:1rem; }
 
   .ui-modal{
     top:12vh;
