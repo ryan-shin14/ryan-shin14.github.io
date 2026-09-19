@@ -35,23 +35,23 @@
     </div>
   </header>
 
-  <!-- Banner image: replace assets/img/background.svg (or point to a .jpg) -->
+  <!-- Banner image: assets/img/background.jpg -->
   <div class="background">
     <div class="background-inner">
-      <img src="assets/img/background.svg" alt="Background image" class="background-img" />
+      <img src="assets/img/background.jpg" alt="Background image" class="background-img" />
     </div>
   </div>
 
   <div class="page-wrapper">
     <aside class="sidebar">
       <div class="profile-card">
-        <!-- Profile photo: replace assets/img/profile.svg (or point to a .jpg) -->
-        <img src="assets/img/profile.svg" alt="Profile photo of Ryan Shin" class="profile-photo" />
+        <!-- Profile photo: assets/img/IMG_4295.JPG -->
+        <img src="assets/img/IMG_4295.JPG" alt="Profile photo of Ryan Shin" class="profile-photo" />
         <div class="profile-name">Ryan Shin</div>
 
         <div class="profile-role">
-          Your Title / Role<br />
-          Your School or Company
+          Student Researcher<br />
+          Duke University
         </div>
 
         <button class="related-links-btn" id="relatedLinksBtn">Related Links</button>
@@ -59,7 +59,7 @@
         <ul class="profile-info" id="profileInfoList">
           <li>
             <img src="assets/img/map_pin_icon.svg" alt="Location" class="inline-icon" />
-            <span>City, State, Country</span>
+            <span>Auburn, Georgia, US</span>
           </li>
 
           <li>
@@ -77,16 +77,9 @@
           </li>
 
           <li>
-            <a href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+            <a href="https://www.linkedin.com/in/ryan-shin-55186725b/" target="_blank" rel="noopener noreferrer" class="sidebar-link">
               <img src="assets/img/linkedin_icon.svg" alt="LinkedIn" class="inline-icon" />
               LinkedIn
-            </a>
-          </li>
-
-          <li>
-            <a href="mailto:you@example.com" class="sidebar-link">
-              <img src="assets/img/mail_icon.svg" alt="Email" class="inline-icon" />
-              Email
             </a>
           </li>
         </ul>
@@ -97,17 +90,22 @@
       <section class="section" id="biography">
         <h2 class="section-title">Biography</h2>
         <p class="cv-line">
-          <!-- TODO: a short third-person bio, 3-5 sentences. -->
-          Ryan Shin is a ... at ... His work focuses on ... He received his ... from ...
+          Ryan Shin is a sophomore at Duke University pursuing a B.S.E. in Electrical and Computer Engineering and
+          Computer Science, with an emphasis in robotics and software. He is a humanoid robot researcher at the
+          <a href="https://generalroboticslab.com/" target="_blank" rel="noopener noreferrer">General Robotics Lab</a>, where he built the electrical stack and low-level motor infrastructure
+          for a 31-DoF humanoid, and he is a co-author of
+          <em>Visible-Reachable Workspace for Perception-Aware Humanoid Design</em>. He was born and raised in
+          Auburn, Georgia.
         </p>
       </section>
 
       <section class="section" id="interests">
         <h2 class="section-title">Interests</h2>
         <ul class="interest-list">
-          <li>Interest one</li>
-          <li>Interest two</li>
-          <li>Interest three</li>
+          <li>Humanoid and legged robotics</li>
+          <li>Robot electronics, power systems and hardware design</li>
+          <li>Control, simulation and learned locomotion policies</li>
+          <li>Embedded and full-stack software</li>
         </ul>
       </section>
 
@@ -119,23 +117,58 @@
           </thead>
           <tbody>
             <tr>
-              <td class="cv-period">Jun. 2025<br />&ndash;<br />Present</td>
+              <td class="cv-period">Jan. 2026<br />&ndash;<br />Present</td>
               <td>
-                <div class="cv-role">Job Title</div>
+                <div class="cv-role">Humanoid Robot Researcher</div>
+                <div class="cv-line"><a href="https://generalroboticslab.com/" target="_blank" rel="noopener noreferrer">General Robotics Lab</a>, Durham, NC</div>
                 <ul class="cv-bullets">
-                  <li>Company / Organization, City, State</li>
-                  <li>What you worked on or accomplished</li>
+                  <li>Built and integrated the electrical stack for a 31-DoF humanoid, including 48-V LiPo power distribution, differential CAN networking across 20+ actuators, centralized power management, and TVS overvoltage protection for reliable high-current operation.</li>
+                  <li>Developed low-level motor infrastructure by configuring RobStride QDD motors, CAN communication, and calibration utilities in Linux, plus a relay-based torque testing platform to characterize actuator performance and reliability.</li>
+                  <li>Designed a specialized parallel gripper with IPC socket-based control and MuJoCo validation workflows, then closed the loop with a visual-feedback MPC controller, cuRobo trajectory planner, and SAC locomotion policy.</li>
                 </ul>
               </td>
             </tr>
-
             <tr>
-              <td class="cv-period">Jun. 2024<br />&ndash;<br />Aug. 2024</td>
+              <td class="cv-period">May 2026<br />&ndash;<br />Aug. 2026</td>
               <td>
-                <div class="cv-role">Internship / Previous Role</div>
+                <div class="cv-role">Software Developer</div>
+                <div class="cv-line">Duke ECE Department, Durham, NC</div>
                 <ul class="cv-bullets">
-                  <li>Company / Organization, City, State</li>
-                  <li>What you worked on or accomplished</li>
+                  <li>Developed full-stack features for the P4ML automated course management platform, streamlining assignment delivery, grading, and repository management for instructors and students using Git-based workflows and MVC architecture.</li>
+                  <li>Designed relational database schemas and optimized SQL/JDBC queries supporting users, assessments, and grading workflows; built services with Spring Boot, Docker, and Kubernetes.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="cv-period">May 2024<br />&ndash;<br />Aug. 2024</td>
+              <td>
+                <div class="cv-role">Lab Research Member</div>
+                <div class="cv-line">Georgia Tech CRAB Lab, Atlanta, GA</div>
+                <ul class="cv-bullets">
+                  <li>Designed sensor PCBs in KiCad and assembled, soldered, and wired Arduino-based, biomechanical force bots.</li>
+                  <li>Designed 3D CAD components to reduce friction and improve mobility, iterating hardware design based on lab feedback.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="cv-period">May 2024<br />&ndash;<br />Aug. 2024</td>
+              <td>
+                <div class="cv-role">Engineering Department Intern</div>
+                <div class="cv-line">Caterpillar Switchgear LLC, Alpharetta, GA</div>
+                <ul class="cv-bullets">
+                  <li>Worked with electrical engineers to understand power systems, switchgear architecture, and manufacturing needs.</li>
+                  <li>Improved the documentation workflow via automated MS VBA tools, decreasing formatting time and improving the interface.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="cv-period">Jun. 2023<br />&ndash;<br />Jul. 2023</td>
+              <td>
+                <div class="cv-role">SWE Intern Researcher</div>
+                <div class="cv-line">Georgia Tech Research Institute, Atlanta, GA</div>
+                <ul class="cv-bullets">
+                  <li>Developed a full-stack web application using Flask, HTML/CSS, and MySQL for user progress and login.</li>
+                  <li>Visualized user progress via learning modules and implemented the HuggingFace API for user question-response queries.</li>
                 </ul>
               </td>
             </tr>
@@ -151,11 +184,107 @@
           </thead>
           <tbody>
             <tr>
-              <td class="cv-period">Aug. 2022<br />&ndash;<br />May 2026</td>
+              <td class="cv-period">Aug. 2025<br />&ndash;<br />May 2029</td>
               <td>
-                <div class="cv-role">B.S. in Your Major</div>
-                <div class="cv-line">Your University, City, State</div>
-                <div class="cv-muted">GPA / Honors / Advisor (optional)</div>
+                <div class="cv-role">B.S.E. in Electrical and Computer Engineering + Computer Science</div>
+                <div class="cv-line">Duke University, Durham, NC &middot; GPA: 4.0/4.0</div>
+                <div class="cv-muted">Duke IEEE Exec Member, Taekwondo Club, Duke Robotics</div>
+                <ul class="cv-bullets">
+                  <li>Relevant coursework: Fields &amp; Waves, Computer Architecture, Signals &amp; Systems, Microelectronics, Humanoid Robotics</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="cv-period">Aug. 2023<br />&ndash;<br />May 2025</td>
+              <td>
+                <div class="cv-role">Dual Enrollment</div>
+                <div class="cv-line">Georgia Institute of Technology &middot; GPA: 4.0/4.0</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="research-projects">
+        <h2 class="section-title">Selected Projects</h2>
+        <table class="cv-table">
+          <thead>
+            <tr><th>Area</th><th>Project</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cv-period">Robotics</td>
+              <td>
+                <div class="cv-role">Duke Humanoid V2</div>
+                <ul class="cv-bullets">
+                  <li>31-DoF humanoid with independently actuated RGB-D cameras for visual manipulation</li>
+                  <li>Electrical stack, low-level motor infrastructure and gripper work (see Experience)</li>
+                  <li>Co-author of the <a href="https://arxiv.org/abs/2609.08905" target="_blank" rel="noopener noreferrer">arXiv paper</a>; see the <a href="https://generalroboticslab.com/DukeHumanoidV2" target="_blank" rel="noopener noreferrer">project page</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="cv-period">Robotics</td>
+              <td>
+                <div class="cv-role">Robodog Quadruped Bot</div>
+                <ul class="cv-bullets">
+                  <li>Designed, built, and integrated an 8-DOF quadruped robot using a MuJoCo environment</li>
+                  <li>PPO policy with custom gait generation, reward shaping, and trajectory optimization, plus PD-controlled actuators, domain randomization, IMU and foot-contact sensing, and Sim2Real-compatible dynamics</li>
+                  <li>Watch the <a href="https://www.youtube.com/watch?v=0yVlB9gpSnM" target="_blank" rel="noopener noreferrer">robot</a> and the <a href="https://www.youtube.com/watch?v=RdS5UPA_Ppw" target="_blank" rel="noopener noreferrer">MuJoCo simulation</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="cv-period">Robotics</td>
+              <td>
+                <div class="cv-role">Cartesian Gripper</div>
+                <ul class="cv-bullets">
+                  <li>Contributed to the design and testing of a 7-DoF Cartesian Hand</li>
+                  <li>Designed the electronics and developed firmware and contact-aware joint control</li>
+                  <li>Deployed on Duke Humanoid V2 and a Franka FR3 robot arm for bimanual manipulation and sequenced task execution</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="cv-period">IoT</td>
+              <td>
+                <div class="cv-role">Compost Bin Alert System</div>
+                <ul class="cv-bullets">
+                  <li>Developed a full-stack IoT compost monitoring prototype for CompostNow</li>
+                  <li>ESP32 and ultrasonic sensors track fill levels, with live updates via Firebase</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="cv-period">Research</td>
+              <td>
+                <div class="cv-role">Autonomously Regulating HABs by Mobilizing UV-Pump Filtration</div>
+                <ul class="cv-bullets">
+                  <li>Developed a cost-effective, accurate autonomous detection system for algae concentration and near 100% UV removal, using turbidity, TDS, and color sensors</li>
+                  <li>Reviewed over 25 peer-reviewed research sources</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="publications">
+        <h2 class="section-title">Publications</h2>
+        <table class="cv-table">
+          <thead>
+            <tr><th>Year</th><th>Publication</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cv-period">2026</td>
+              <td>
+                Xia, B., Yang, Z., <span class="highlight-bold-blue">Shin, R.</span>, et al.
+                “Visible-Reachable Workspace for Perception-Aware Humanoid Design”,
+                <em>arXiv:2609.08905</em>, 2026.
+                <a href="https://arxiv.org/abs/2609.08905" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                <span class="cv-muted">&middot; <a href="publications.html">All publications</a></span>
               </td>
             </tr>
           </tbody>
@@ -163,22 +292,19 @@
       </section>
 
       <section class="section" id="awards">
-        <h2 class="section-title">Awards &amp; Skills</h2>
+        <h2 class="section-title">Skills &amp; Awards</h2>
         <table class="cv-table">
           <thead>
-            <tr><th>Year</th><th>Item</th></tr>
+            <tr><th>Category</th><th>Details</th></tr>
           </thead>
           <tbody>
             <tr>
-              <td class="cv-period">2025</td>
-              <td>
-                <div class="cv-role">Award or Scholarship Name</div>
-                <div class="cv-line">Awarding organization</div>
-              </td>
+              <td class="cv-period">Skills</td>
+              <td>Microcontrollers, Java, Python (PyTorch), Fusion360, CAN, C++, Docker, SQL, Linux, KiCad, MuJoCo</td>
             </tr>
             <tr>
-              <td class="cv-period">Skills</td>
-              <td>Python, C++, JavaScript, ...</td>
+              <td class="cv-period">Awards</td>
+              <td>Duke Dean&rsquo;s List</td>
             </tr>
           </tbody>
         </table>

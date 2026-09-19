@@ -35,23 +35,23 @@
     </div>
   </header>
 
-  <!-- Banner image: replace assets/img/background.svg (or point to a .jpg) -->
+  <!-- Banner image: assets/img/background.jpg -->
   <div class="background">
     <div class="background-inner">
-      <img src="assets/img/background.svg" alt="Background image" class="background-img" />
+      <img src="assets/img/background.jpg" alt="Background image" class="background-img" />
     </div>
   </div>
 
   <div class="page-wrapper">
     <aside class="sidebar">
       <div class="profile-card">
-        <!-- Profile photo: replace assets/img/profile.svg (or point to a .jpg) -->
-        <img src="assets/img/profile.svg" alt="Profile photo of Ryan Shin" class="profile-photo" />
+        <!-- Profile photo: assets/img/IMG_4295.JPG -->
+        <img src="assets/img/IMG_4295.JPG" alt="Profile photo of Ryan Shin" class="profile-photo" />
         <div class="profile-name">Ryan Shin</div>
 
         <div class="profile-role">
-          Your Title / Role<br />
-          Your School or Company
+          Student Researcher<br />
+          Duke University
         </div>
 
         <button class="related-links-btn" id="relatedLinksBtn">Related Links</button>
@@ -59,7 +59,7 @@
         <ul class="profile-info" id="profileInfoList">
           <li>
             <img src="assets/img/map_pin_icon.svg" alt="Location" class="inline-icon" />
-            <span>City, State, Country</span>
+            <span>Auburn, Georgia, US</span>
           </li>
 
           <li>
@@ -77,16 +77,9 @@
           </li>
 
           <li>
-            <a href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noopener noreferrer" class="sidebar-link">
+            <a href="https://www.linkedin.com/in/ryan-shin-55186725b/" target="_blank" rel="noopener noreferrer" class="sidebar-link">
               <img src="assets/img/linkedin_icon.svg" alt="LinkedIn" class="inline-icon" />
               LinkedIn
-            </a>
-          </li>
-
-          <li>
-            <a href="mailto:you@example.com" class="sidebar-link">
-              <img src="assets/img/mail_icon.svg" alt="Email" class="inline-icon" />
-              Email
             </a>
           </li>
         </ul>
@@ -97,82 +90,72 @@
       <section class="section" id="scope">
         <h2 class="section-title">Overview</h2>
         <p>
-          <!-- TODO: a short paragraph on the kinds of projects you build and why. -->
-          A short intro to the kinds of things I build, what I’m curious about, and what ties these projects together.
+          I build robots end to end: mechanical design, electronics, and the control software that runs on them.
+          These are the platforms I&rsquo;ve worked on so far, from a research humanoid to a small quadruped.
         </p>
       </section>
 
-      <section class="section" id="category-one">
-        <h2 class="section-title">Category One</h2>
+      <section class="section" id="robotics">
+        <h2 class="section-title">Robotics</h2>
         <div class="highlight-list">
           <article class="highlight-item">
-            <img src="assets/img/project1.svg" alt="Project One Title" class="highlight-thumb" />
+            <img src="assets/img/rob.png" alt="Duke Humanoid V2" class="highlight-thumb" />
             <div>
-              <div class="highlight-title">Project One Title</div>
+              <div class="highlight-title">Duke Humanoid V2</div>
               <div class="highlight-authors">
-                <span class="highlight-bold-blue">Role &middot; 2025</span><br />
-                A few sentences on the problem, your approach, and the outcome.
+                <span class="highlight-bold-blue">Electrical Stack, Control, Hardware &middot; 2026</span><br />
+                A custom 31-degree-of-freedom humanoid platform with independently actuated RGB-D cameras, built to characterize the visible-reachable workspace (VRW): where a robot can both reach and see its targets. In the accompanying study, camera articulation raised visible-reachable coverage from 38% to 97% and reduced manipulation task time by 17% and energy use by 19%.
               </div>
-              <div class="tag-list"><span class="tag">Python</span><span class="tag">PyTorch</span></div>
+              <div class="tag-list"><span class="tag">CAN</span><span class="tag">UART</span><span class="tag">Python</span><span class="tag">Fusion360</span><span class="tag">SSH</span><span class="tag">Linux</span></div>
               <div class="highlight-links">
-                <a href="https://github.com/ryan-shin14" target="_blank" rel="noopener noreferrer">[code]</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">[demo]</a>
+                <a href="https://arxiv.org/abs/2609.08905" target="_blank" rel="noopener noreferrer">[paper]</a>
+                <a href="https://generalroboticslab.com/DukeHumanoidV2" target="_blank" rel="noopener noreferrer">[project page]</a>
+                <a href="https://github.com/generalroboticslab/duke_humanoid_v2" target="_blank" rel="noopener noreferrer">[code]</a>
+                <a href="https://www.youtube.com/watch?v=tKMAzhqL58o" target="_blank" rel="noopener noreferrer">[video]</a>
               </div>
             </div>
           </article>
 
           <article class="highlight-item">
-            <img src="assets/img/project2.svg" alt="Project Two Title" class="highlight-thumb" />
+            <img src="assets/img/quad.png" alt="Robodog Quadruped" class="highlight-thumb" />
             <div>
-              <div class="highlight-title">Project Two Title</div>
+              <div class="highlight-title">Robodog Quadruped</div>
               <div class="highlight-authors">
-                <span class="highlight-bold-blue">Role &middot; 2024</span><br />
-                A few sentences on the problem, your approach, and the outcome.
+                <span class="highlight-bold-blue">Design, Hardware, Simulation &amp; Control</span><br />
+                A fully functional 8-DOF quadruped robot inspired by Boston Dynamics robots, designed and built from the ground up for locomotion research, simulation, and embedded robotics development.<br /><br />The robot has a four-legged architecture powered by eight ST3215 serial bus servos, with two actuated joints (hip and knee) per leg. A custom chassis and leg assemblies were designed in Fusion and 3D printed in PLA for a lightweight yet durable platform. An Orange Pi running Linux serves as the onboard computer, communicating with the servos and executing locomotion algorithms developed in Python.<br /><br />The completed quadruped demonstrated stable forward and backward walking as well as turning. Through iterative mechanical design, gait tuning, and testing in MuJoCo, it achieved reliable locomotion on flat surfaces. The project validated the full robotics pipeline, from CAD design and simulation to hardware integration and real-world deployment via a tuned PPO policy.
               </div>
-              <div class="tag-list"><span class="tag">C++</span><span class="tag">ROS</span></div>
+              <div class="tag-list"><span class="tag">Python</span><span class="tag">MuJoCo</span><span class="tag">PPO</span><span class="tag">Fusion360</span><span class="tag">3D Printing</span><span class="tag">Orange Pi</span><span class="tag">Linux</span></div>
               <div class="highlight-links">
-                <a href="https://github.com/ryan-shin14" target="_blank" rel="noopener noreferrer">[code]</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">[demo]</a>
+                <a href="https://www.youtube.com/watch?v=0yVlB9gpSnM" target="_blank" rel="noopener noreferrer">[video]</a>
+                <a href="https://www.youtube.com/watch?v=RdS5UPA_Ppw" target="_blank" rel="noopener noreferrer">[simulation video]</a>
               </div>
             </div>
           </article>
+
         </div>
       </section>
 
-      <section class="section" id="category-two">
-        <h2 class="section-title">Category Two</h2>
-        <div class="highlight-list">
-          <article class="highlight-item">
-            <img src="assets/img/project3.svg" alt="Project Three Title" class="highlight-thumb" />
-            <div>
-              <div class="highlight-title">Project Three Title</div>
-              <div class="highlight-authors">
-                <span class="highlight-bold-blue">Role &middot; 2023</span><br />
-                A few sentences on the problem, your approach, and the outcome.
-              </div>
-              <div class="tag-list"><span class="tag">JavaScript</span><span class="tag">React</span></div>
-              <div class="highlight-links">
-                <a href="https://github.com/ryan-shin14" target="_blank" rel="noopener noreferrer">[code]</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">[demo]</a>
-              </div>
+      <section class="section" id="robodog-videos">
+        <h2 class="section-title">Robodog Videos</h2>
+        <div class="video-grid">
+          <figure class="video-card">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/0yVlB9gpSnM?rel=0" title="Robodog Quadruped"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-          </article>
+            <figcaption class="video-caption">Robodog Quadruped walking on hardware</figcaption>
+          </figure>
 
-          <article class="highlight-item">
-            <img src="assets/img/project4.svg" alt="Project Four Title" class="highlight-thumb" />
-            <div>
-              <div class="highlight-title">Project Four Title</div>
-              <div class="highlight-authors">
-                <span class="highlight-bold-blue">Role &middot; 2022</span><br />
-                A few sentences on the problem, your approach, and the outcome.
-              </div>
-              <div class="tag-list"><span class="tag">Arduino</span><span class="tag">CAD</span></div>
-              <div class="highlight-links">
-                <a href="https://github.com/ryan-shin14" target="_blank" rel="noopener noreferrer">[code]</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">[demo]</a>
-              </div>
+          <figure class="video-card">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/RdS5UPA_Ppw?rel=0" title="Robodog MuJoCo simulation"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-          </article>
+            <figcaption class="video-caption">Robodog in the MuJoCo simulation</figcaption>
+          </figure>
+
         </div>
       </section>
     </main>

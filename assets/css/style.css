@@ -421,6 +421,43 @@ a:hover{text-decoration:underline;}
 }
 
 /* =========================
+   Embedded videos (Projects page)
+   ========================= */
+.video-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  width:75%;
+  align-items:start;
+}
+
+figure.video-card{ margin:0; min-width:0; }
+
+.video-frame{
+  position:relative;
+  width:100%;
+  aspect-ratio:16 / 9;
+  background:#000;
+  border-radius:8px;
+  overflow:hidden;
+}
+.video-frame iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+.video-caption{
+  margin-top:10px;
+  font-size:.9rem;
+  line-height:1.7;
+  font-weight:650;
+  color:#111;
+}
+
+/* =========================
    Photo grid (More page)
    ========================= */
 .photo-grid{
@@ -614,6 +651,12 @@ figure.photo-card{ margin:0; min-width:0; }
   .projects-page .highlight-authors{ font-size:.85rem; }
   .highlight-links,
   .projects-page .highlight-links{ font-size:.85rem; }
+
+  .video-grid{
+    grid-template-columns:1fr;
+    width:100%;
+  }
+  .video-caption{ font-size:1rem; }
 
   .photo-grid{
     grid-template-columns:1fr;
