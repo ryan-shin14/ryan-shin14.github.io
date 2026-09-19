@@ -407,6 +407,20 @@ a:hover{text-decoration:underline;}
 .interest-list li{ margin:4px 0; }
 
 /* =========================
+   Publications page
+   ========================= */
+.publications-page .section-title{ font-weight:650; }
+.publications-page .cv-period{ width:96px; }
+.publications-page .cv-table tbody td{ line-height:1.55; }
+
+.pdf-link{
+  margin-left:8px;
+  font-weight:400;
+  font-size:.67em;
+  color:var(--unified-blue);
+}
+
+/* =========================
    Photo grid (More page)
    ========================= */
 .photo-grid{
